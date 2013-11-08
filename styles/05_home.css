@@ -32,6 +32,8 @@
 #slider #slider-bullets a { display:inline-block; width:10px; height:10px; margin:0 4px; background:url('../uploads/defacto/img/slider-pagination.png') no-repeat; }
 #slider #slider-bullets a.active { background-position:-10px 0; }
 
+#slogan { margin:40px 0; text-align:center; font-size:3em; }
+
 #banner #pagination{position:relative;z-index:4;}
 #banner #pagination a{display:block;position:absolute;top:0;width:30px;height:226px;background:url('../uploads/defacto/img/banner-pagination.png') no-repeat;}
 #banner #pagination #prev{left:0;background-position:-5px 50%;}
@@ -78,7 +80,10 @@
 	border-radius:5px;
 }
 
+#sidebar-banner { padding: 15px 0; border-bottom:1px solid #d5d5d5; }
+
 #capp #video { padding:15px 0; border-bottom:1px solid #d5d5d5;}
+#capp #video h2 { margin-bottom:5px; font-weight:bold; }
 #capp #video a { position:relative; display:block; width:186px; height:114px; }
 #capp #video a.hidden { display:none; }
 #capp #video img { border:1px solid #666; }
