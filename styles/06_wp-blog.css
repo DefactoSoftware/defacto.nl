@@ -1,0 +1,204 @@
+﻿.blogs-showblogsentry {
+	padding-bottom: 3em;
+}
+
+.blogs-showblogsentrytitle,
+.blogs-showblogsentrytitle a {
+	/*color: #556187;
+	font-size: 1.5em;*/
+	text-decoration: none;
+}
+
+.blogs-showentrycomments {
+	padding-top: 3em;
+}
+
+.blogs-showentrycomment {
+	clear: both;
+	padding: 1.5em;
+	overflow: auto;
+}
+
+.blogs-showentrycomment.odd {
+	background-color: #F6F6F6;	
+}
+
+
+.blogs-showentrycommentauthor {
+	float: left;
+	width: 20%;
+}
+
+.blogs-showentrycommenttime {
+	font-size: 0.9em;
+}
+
+.blogs-showentrycommenttext {
+	float: right;
+	width: 79%;;
+}
+
+.blogs-showentrycommentform {
+	padding-top: 3em;	
+}
+
+.blogs-showentrycommentform label {
+	display: block;
+	padding: 0.5em 1.5em;
+}
+
+.blogs-showentrycommentform label:hover {
+	background-color: #F6F6F6;
+}
+
+
+
+
+.blogs-addcommentlabel {
+	display: block;
+	width: 20%;
+	float: left;
+}
+
+/* =wp
+-------------------*/
+
+
+
+.contenttitle a {
+	text-decoration: none;
+	color: #7E9AB6;
+}
+
+.contenttitle a:hover {
+	color: #3b3b3b;
+}
+
+p {
+	margin-bottom: 1.5em;
+}
+
+.postmetadata {
+	text-align: center;
+	font-size: 80%;
+	border: 1px #9DBBD8 solid;
+	border-width: 1px 0;
+	padding: 0.5em;
+	margin-bottom: 3em;
+}
+
+#recentnews li a {
+	display: block;
+	text-indent: 15px;
+}
+
+
+
+#rightcolumn {
+	font-size: 11px;
+	line-height: 18px
+}
+
+#rightcolumn label.hidden {
+	display: none;
+}
+
+#rightcolumn #s {
+	width: 100px;
+}
+
+
+
+#rightcolumn #searchsubmit {
+	width: 80px;
+}
+
+
+
+#rightcolumn ul {
+	list-style-type: none;
+}
+
+
+
+
+#rightcolumn .navigation {
+	margin: 1.5em 0;
+	
+}
+
+h3.about-author {
+	margin: 14px 0 8px; 
+}
+
+#comment {
+	width: 24em;
+}
+
+.comment-author {
+	float: left;
+	width: 50%
+}
+
+
+.comment-meta {
+	float: right;
+	width: 49%;
+	text-align: right;
+}
+
+/* Captions & aligment */
+.aligncenter,
+div.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+.wp-caption {
+	border: 1px solid #ddd;
+	text-align: center;
+	background-color: #f3f3f3;
+	padding-top: 4px;
+	margin: 10px;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.wp-caption img {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+}
+
+.wp-caption p.wp-caption-text {
+	font-size: 11px;
+	line-height: 17px;
+	padding: 0 4px 5px;
+	margin: 0;
+}
+/* End captions & aligment */
+
+.entry ol {
+	padding-left: 1.5em;
+}
+
+.entry ol li {
+	margin-bottom: 1em;
+}
+
+
+/*temp fix*/
+#contentnarrow {
+	width: 390px;
+}

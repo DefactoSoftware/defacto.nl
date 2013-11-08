@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'OfficinaSansBook';
+    src: url('../fonts/itcof7-webfont.eot');
+    src: url('../fonts/itcof7-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/itcof7-webfont.woff') format('woff'),
+         url('../fonts/itcof7-webfont.ttf') format('truetype'),
+         url('../fonts/itcof7-webfont.svg#itc_officina_sans_bookregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
