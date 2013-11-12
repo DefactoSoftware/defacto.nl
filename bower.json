@@ -1,0 +1,9 @@
+{
+  "name": "defacto.nl",
+  "version": "0.0.1",
+  "dependencies": {
+    "jquery": "~1",
+    "fancybox": "",
+    "jquery-cycle" : ""
+  }
+}
