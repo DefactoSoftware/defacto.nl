@@ -4,6 +4,7 @@
   "dependencies": {
     "jquery": "~1",
     "fancybox": "",
+    "jquery.tools": "",
     "jquery-cycle" : ""
   }
 }
