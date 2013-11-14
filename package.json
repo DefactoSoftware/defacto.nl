@@ -5,9 +5,16 @@
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-uglify": "~0.2.0",
-    "grunt-contrib-cssmin": "~0.6.0"
+    "grunt-contrib-cssmin": "~0.6.0",
+    "grunt-contrib-copy": "",
+    "grunt-text-replace": "",
+    "bower": ""
   },
   "engines": {
     "node": ">=0.8.0"
+  },
+  "repository" : {
+    "type" : "git"
+  , "url" : "https://github.com/DefactoSoftware/defacto.nl.git"
   }
 }
