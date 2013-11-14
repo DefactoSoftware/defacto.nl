@@ -8,6 +8,7 @@
     "grunt-contrib-cssmin": "~0.6.0",
     "grunt-contrib-copy": "",
     "grunt-text-replace": "",
+    "grunt-contrib-clean": "",
     "bower": ""
   },
   "engines": {
