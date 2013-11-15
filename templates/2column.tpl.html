@@ -1,0 +1,67 @@
+{process_pagedata}<!DOCTYPE html>
+<html lang="nl">
+<head>
+{metadata showbase="true"}
+{capture assign='captured_content'}{content}{/capture}
+{if isset($detail_title)}
+    <title>{$detail_title} - {sitename}</title>
+{else}
+    <title>{title} - {sitename}</title>
+{/if}
+{if isset($detail_description)}
+    <meta name="description" content="{$detail_description}" />
+{else}
+    <meta name="description" content="{content block='description' oneline='true' wysiwyg='false'}" />
+{/if}
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+{static_stylesheet}
+{cms_selflink dir="start" rellink=1}
+{cms_selflink dir="prev" rellink=1}
+{cms_selflink dir="next" rellink=1}
+</head>
+
+<body class="nobanner">
+<div id="wrap">
+	<div id="header">
+		<a href="/"  id="logo"><img src="uploads/defacto/img/logo_de.jpg" alt="{sitename}" title="{sitename}" /></a>
+		<div id="menu">
+			{cached_menu template="defacto.tpl" number_of_levels="2"}
+		</div>
+		{taalkeuze}
+	</div>
+	<div id="banner">&nbsp;</div>
+	<div id="content" class="clearfix">
+		<div id="bluebar">
+			<div class="head">
+				<h1>{title}</h1>
+			</div>
+		</div>
+		<div id="maincolumn">
+			<div id="contentwide">
+				{$captured_content}
+			</div>
+		</div>
+		<div id="rightcolumn">
+			{content block="Rechter kolom"}
+		</div>
+	</div>
+</div>
+
+<div id="bottom">
+	<div id="bottom-content">
+		
+	</div>
+	<div id="footer">
+		<span class="copyright">© {copyright_year} Defacto Automatisering. Alle rechten voorbehouden.</span>
+		<a href="index.php?page=sitemap" class="sitemap">Sitemap</a>
+		{adwords_conversietracker conversion_label=$smarty.capture.adwords_conversion_label}
+	</div>
+</div>
+
+{global_content name='global_javascript'}
+{content block='JavaScript' wysiwyg='false'}
+{google_analytics virtual_url=$smarty.capture.analytics_virtual_url}
+{nedstat_include pagealias=$page_alias}
+</body>
+</html>

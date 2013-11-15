@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+{metadata showbase="false"}
+<title>{sitename} - {title}</title>
+<meta name="description" content="{content block='description' oneline='true' wysiwyg='false'}" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+{static_stylesheet}
+{cms_selflink dir="start" rellink=1}
+{cms_selflink dir="prev" rellink=1}
+{cms_selflink dir="next" rellink=1}
+</head>
+<body id="home">
+<div id="wrap">
+	<div id="header">
+		<div id="logo">
+			<a href="/"><img src="uploads/defacto/img/logo_de.jpg" alt="{sitename}" title="{sitename}" /></a>
+		</div>
+		<div id="menu">
+			{menu template="defacto.tpl" number_of_levels="2"}
+		</div>
+		{taalkeuze}
+	</div>
+	
+	<div id="main" class="clearfix">
+		<div id="main-left">
+			<div id="slider">
+				<div id="slider-container">
+					<div id="slider-overflow">
+						<div id="slides">
+							{cms_module module='Album' albums='Slider 1'}
+						</div>
+					</div>
+				</div>
+				<div id="slider-bullets"></div>
+			</div>
+                        <h1 id="slogan">Developing People</h1>
+			<div id="blocks" class="clearfix">
+				<div class="block block1">
+					{capture assign='blocktitle'}{content block='Blok 1 titel' oneline='true' wysiwyg='false'}{/capture}
+					<h2><a href="{content block='Blok 1 URL' oneline='true' wysiwyg='false'}">{$blocktitle}</a></h2>
+					{content block="Blok 1"}
+				</div>
+				<div class="block block2 last">
+					{capture assign='blocktitle'}{content block='Blok 2 titel' oneline='true' wysiwyg='false'}{/capture}
+					<h2><a href="{content block='Blok 2 URL' oneline='true' wysiwyg='false'}">{$blocktitle}</a></h2>
+					{content block="Blok 2"}
+				</div>
+				<div class="block block3 last">
+					{capture assign='blocktitle'}{content block='Blok 3 titel' oneline='true' wysiwyg='false'}{/capture}
+					<h2><a href="{content block='Blok 3 URL' oneline='true' wysiwyg='false'}">{$blocktitle}</a></h2>
+					{content block="Blok 3"}
+				</div>
+			</div>
+			<div id="content" class="clearfix">
+				<div id="home-left" class="home-content">
+					<h4>{content block='Links titel' oneline='true' wysiwyg='false'}</h4>
+					{content block="Links"}
+				</div>
+				<div id="home-right" class="home-content">
+					<h4>{content block='Rechts titel' oneline='true' wysiwyg='false'}</h4>
+					{content block="Rechts"}
+				</div>
+			</div>
+		</div>
+		
+		<div id="main-right">
+			<div id="capp">
+				<h1><a href="index.php?page=CAPP-11"><img src="uploads/defacto/img/capp11-devppl.png" alt="CAPP 11 Opleidingssoftware" /></a></h1>
+				{menu start_page="home-buttons" number_of_levels="1" template="buttons"}
+				<div id="referenties">
+					<h2><a href="index.php?page=referenties">Wij werken voor:</a></h2>
+					<div id="logos">
+						{referentie_logos path="uploads/images/home/referenties/"}
+					</div>
+				</div>
+
+				<div id="sidebar-banner">
+					<a href="http://www.defacto.nl/news/125/61/Handboek-E-Learning-Leren-en-laten-leren"><img src="http://www.defacto.nl/uploads/images/boekenlegger-banner.jpg" alt="Handboek E-Learning: Leren en laten leren" /></a>
+				</div>
+
+				<div id="video">
+<h2>Defacto faciliteert jaargesprekken bij LUMC</h2>
+				<a class="iframe" rel="videos" title="LUMC: Opleiden en ontwikkelen met CAPP" href="http://www.youtube.com/embed/kyZekt4Oapk?rel=0&amp;autoplay=1" data-fancybox-type="iframe">
+						<img src="uploads/defacto/img/video-lumc-small.jpg" alt="video: LUMC: Opleiden en ontwikkelen met CAPP" />
+						<span class="play"></span>
+					</a>
+
+<!--
+					<a class="iframe hidden" rel="videos" title="Introductie CAPP 11" href="http://www.youtube.com/embed/_k-CBCInUfo?rel=0&amp;autoplay=1"></a>
+					<a class="iframe hidden" rel="videos" title="Demonstratie CAPP 11" href="http://www.youtube.com/embed/SqJyFSs2UPk?rel=0&amp;autoplay=1"></a>
+					<a class="iframe hidden" rel="videos" title="Rollen in CAPP 11" href="http://www.youtube.com/embed/M5ZCFQusL2w?rel=0&amp;autoplay=1"></a>
+					<a class="iframe hidden" rel="videos" title="CAPP 11 voor u" href="http://www.youtube.com/embed/29RqJzhNmaQ?rel=0&amp;autoplay=1"></a>
+					<a class="iframe hidden" rel="videos" title="Blended Learning in CAPP 11" href="http://www.youtube.com/embed/DEEqv2Rcp18?rel=0&amp;autoplay=1"></a>
+					<a class="iframe hidden" rel="videos" title="Referentie-projecten" href="http://www.youtube.com/embed/n2c5zWbdeVQ?rel=0&amp;autoplay=1"></a>
+					<a class="iframe hidden" rel="videos" title="Visie" href="http://www.youtube.com/embed/0TIT0zeivY8?rel=0&amp;autoplay=1"></a>
+-->
+				</div>
+				<div>
+				{calendar}
+				</div>
+				{contact_info}
+				<!--
+				<div id="niewsbrief">
+					<h2><a href="index.php?page=nieuwsbrieven">Blijf op de hoogte:</a></h2>
+				</div-->
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="bottom">
+	<div id="bottom-content">
+		{content}
+	</div>
+	<div id="footer">
+		<span class="copyright">© {copyright_year} Defacto Automatisering. Alle rechten voorbehouden.</span>
+		<a href="index.php?page=sitemap" class="sitemap">Sitemap</a>
+		{adwords_conversietracker conversion_label=$smarty.capture.adwords_conversion_label}
+	</div>
+</div>
+
+{global_content name='global_javascript'}
+{content block='JavaScript' wysiwyg='false'}
+{google_analytics virtual_url=$smarty.capture.analytics_virtual_url}
+{nedstat_include pagealias=$page_alias}
+</body>
+</html>
