@@ -28,6 +28,7 @@ module.exports = function(grunt) {
     uglify: {
         dist: {
             files: {
+              
               'dist/uploads/defacto/js/scripts.js': [
                 /*plugins*/
                 'bower_components/fancybox/source/jquery.fancybox.pack.js',
@@ -37,10 +38,18 @@ module.exports = function(grunt) {
                 'bower_components/jquery-cycle/jquery.cycle.lite.js',
                 
                 /*own scripts*/
-                'scripts/*.js'
+                'scripts/global/*.js'
+              ],
+
+              'dist/uploads/defacto/js/validate.js': [
+                'bower_components/jquery.validation/jquery.validate.js',
+                'scripts/jquery.validate.pack.realmail.js'
               ]
-                
-            }
+
+            },
+            options: {
+              preserveComments: 'some'
+          }
         }
     },
     copy: {

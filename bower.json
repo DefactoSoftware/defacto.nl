@@ -5,6 +5,7 @@
     "jquery": "~1",
     "fancybox": "",
     "jquery.tools": "",
-    "jquery-cycle" : ""
+    "jquery-cycle" : "",
+    "jquery.validation" : ""
   }
 }
