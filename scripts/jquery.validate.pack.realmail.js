@@ -17,7 +17,7 @@ jQuery.validator.addMethod(
       'owlpic.com'
     ];
 
-    if (new RegExp(blacklist.join("|")).test(mail)) {
+    if (new RegExp(blacklist.join("|").replace(/\./g, '\\.')).test(mail)) {
       return false;
     }
     return true;
